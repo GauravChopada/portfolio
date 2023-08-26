@@ -19,7 +19,7 @@ const About = () => {
             <div className='flex flex-row gap-8'>
                 <div className='flex flex-row gap-3'>
                     <Image src={locationSVG} alt='location'/>
-                    From Surat, India
+                    <a target='_blank' className="hover:text-teal-300 hover:underline" href="https://www.google.com/maps/place/21%C2%B014'11.2%22N+72%C2%B054'36.0%22E/@21.2356,72.9083042,18.18z/data=!4m4!3m3!8m2!3d21.236446!4d72.909989?authuser=1&entry=ttu">From Surat, India</a>
                 </div>
                 <div className='flex flex-row gap-3'>
                     <Image src={studySVG} alt='location'/>
