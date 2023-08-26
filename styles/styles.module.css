@@ -1,0 +1,12 @@
+.outerDiv {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:bisque; */
+    border: 1px solid black;
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+}
