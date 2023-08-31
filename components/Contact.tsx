@@ -10,7 +10,7 @@ import freelancerSVG from '../utils/svgs/freelancer.svg'
 
 const Contact = () => {
   return (
-    <div className=" w-screen px-16 py-40 flex flex-col items-start justify-start">
+    <div id="contact " className="w-screen px-16 py-40 flex flex-col items-start justify-start">
       <div className="text-6xl font-black mb-14">Contact</div>
 
       <div className="text-3xl font-bold mb-6 text-gray-600">Get in touch on</div>
@@ -20,7 +20,7 @@ const Contact = () => {
             <Image className="h-10 w-10" src={githubSvg} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
             <a href="https://github.com/GauravChopada/portfolio" target="_blank" className="hover:text-teal-300 hover:underline">github.com/GauravChopada</a>
-            
+
           </div>
           <div className="flex flex-row items-center gap-3 w-1/2">
             <Image className="h-10 w-10" src={emailSvg} alt="Visit GitHub" />

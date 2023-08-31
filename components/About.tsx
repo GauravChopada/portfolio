@@ -5,7 +5,7 @@ import studySVG from '../utils/svgs/study.svg'
 import jobSVG from '../utils/svgs/job.svg'
 
 const About = () => {
-    return <div className="h-screen w-screen px-16 flex flex-row items-center justify-center gap-40">
+    return <div id="about" className="h-screen w-screen px-16 flex flex-row items-center justify-center gap-40">
         <div className='w-1/3'>
             <Image src={gauravChopadaImage} alt='Gaurav Chopda'/>
         </div>

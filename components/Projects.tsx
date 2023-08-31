@@ -3,7 +3,7 @@ import laptop from '../utils/images/Dummy.jpg';
 
 const Projects = () => {
     return <>
-        <div className="h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
+        <div id='projects' className="h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
             <div className="text-6xl font-black mb-32">
                 <div className="flex place-content-center">Projects</div>
                 <div className='py-10'>
