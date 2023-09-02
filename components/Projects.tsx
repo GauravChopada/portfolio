@@ -6,7 +6,7 @@ import toyr from '../utils/images/TOYR.jpg';
 
 const Projects = () => {
   return <>
-    <div className="w-screen px-16 pt-40 flex flex-col items-start justify-start">
+    <div id='projects' className="w-screen px-16 pt-40 flex flex-col items-start justify-start">
       <div className="text-6xl font-black mb-5">Projects</div>
       <div className='flex flex-row mb-32'>
       <div className="text-xl font-light text-gray-500 mr-1">Below are some of my favourite projects I have worked on. Explore more projects on my </div>

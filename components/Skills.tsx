@@ -5,7 +5,7 @@ import { convertToSubarrays } from "@/utils/helpers";
 const Skills = () => {
   //   const formattedSkillsData = convertToSubarrays(skillsData);
   return (
-    <div className="h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
+    <div id="skills" className="h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
       <div className="text-6xl font-black mb-32">Key Skills</div>
       <div className="flex flex-row flex-wrap justify-start items-center gap-6">
         {skillsData.map((skillObject, index) => (
