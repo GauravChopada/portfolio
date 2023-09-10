@@ -3,13 +3,19 @@ import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
+import { useEffect, useState } from 'react'
+// import Achievements from '@/components/Achievements'
 
 export default function Home() {
+
+  
+
   return (
     <div className="">
       <Intro />
       <About />
       <Skills />
+      {/* <Achievements /> */}
       <Projects />
       <Contact />
 
