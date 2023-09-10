@@ -3,14 +3,12 @@ import githubSvg from '../utils/svgs/githubSvg.svg'
 import linkedInSvg from '../utils/svgs/linkedinSVG.svg'
 import emailSvg from '../utils/svgs/email.svg'
 import phoneSvg from '../utils/svgs/phone.svg'
-import locationSVG from '../utils/svgs/location.svg'
-import instagramSVG from '../utils/svgs/instagram.svg'
 import whatsappSVG from '../utils/svgs/whatsapp.svg'
 import freelancerSVG from '../utils/svgs/freelancer.svg'
 
 const Contact = () => {
   return (
-    <div id="contact " className="w-screen px-16 py-40 flex flex-col items-start justify-start">
+    <section id="contact" className="min-h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
       <div className="text-6xl font-black mb-14">Contact</div>
 
       <div className="text-3xl font-bold mb-6 text-gray-600">Get in touch on</div>
@@ -101,7 +99,7 @@ const Contact = () => {
         <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">SUBMIT</button>
 
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import gauravChopadaImage from '../utils/images/Gaurav Chopda.jpg'
 import locationSVG from '../utils/svgs/location.svg'
+import NamasteImage from '../utils/images/Namste.png'
 import studySVG from '../utils/svgs/study.svg'
 import jobSVG from '../utils/svgs/job.svg'
 
 const About = () => {
-    return <div id="about" className="h-screen w-screen px-16 flex flex-row items-center justify-center gap-40">
+    return <section id="about" className="min-h-screen w-screen px-16 flex flex-row items-center justify-center gap-40">
         <div className='w-1/3'>
             <Image src={gauravChopadaImage} alt='Gaurav Chopda'/>
         </div>
         <div className='flex flex-col items-start justify-center gap-5 w-2/3'>
-            <div className='text-5xl font-black'>
-                Namaste 🙏🏻
+            <div className='text-5xl font-black flex flex-row items-center gap-4'>
+                Namaste
+                <Image className='h-12 w-12' src={NamasteImage} alt='greetings'/>
             </div>
             <div className='text-6xl font-extralight'>
                 MySelf Gaurav Chopda
@@ -34,7 +36,7 @@ const About = () => {
                 I am a software developer with a passion for building cutting-edge and advanced applications. I have extensive knowledge in ReactJS, Flutter, and AWS Cloud. In addition to these, I am proficient in several other programming languages and technologies, and I possess excellent problem-solving skills. I thrive in a team environment and enjoy exploring new technologies on a daily basis.
             </div>
         </div>
-    </div>
+    </section>
 }
 
 export default About

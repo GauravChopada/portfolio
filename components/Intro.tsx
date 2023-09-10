@@ -1,24 +1,19 @@
 import React from "react"
-import styles from '../styles/styles.module.css'
+import styles from '../styles/intro.module.css'
+import ScrollIcon from "./ScrollIcon"
 
 const Intro = () => {
-    return <div id="intro" className='h-screen w-screen px-16 flex flex-col items-start justify-center gap-2'>
-        <div className="text-7xl font-thin ">
-            Hi There 👋🏻
+    return <section id="intro" className='min-h-[80vh] px-16 flex flex-col items-center justify-center gap-2'>
+        <div className={styles.Intro__Title}>
+            Gaurav Chopda
         </div>
-        <div className="text-9xl font-bold">
-            I am Gaurav Chopda
+        <div className={styles.Intro__Subtitle}>
+            Full Stack Developer   |   AWS Solution Architect   |   Mobile App Developer
         </div>
-        <div className="text-8xl font-semibold">
-            Full Stack Developer
+        <div className=''>
+            <ScrollIcon />
         </div>
-        <div className="text-2xl font-extralight">
-            this is a very long caption and it is going to explain above point.
-        </div>
-        <button className="border-2 rounded-xl border-white border-solid p-3 mt-3">
-            CONTACT NOW
-        </button>
-    </div>
+    </section>
 }
 
 export default Intro
