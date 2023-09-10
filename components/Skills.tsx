@@ -5,11 +5,12 @@ import { convertToSubarrays } from "@/utils/helpers";
 const Skills = () => {
   //   const formattedSkillsData = convertToSubarrays(skillsData);
   return (
-    <div className="h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
+    <section id="skills" className="min-h-screen w-screen px-16 py-40 flex flex-col items-start justify-start">
       <div className="text-6xl font-black mb-32">Key Skills</div>
       <div className="flex flex-row flex-wrap justify-start items-center gap-6">
-        {skillsData.map((skillObject) => (
+        {skillsData.map((skillObject, index) => (
           <SkillCard
+            key={index}
             image={skillObject.image}
             title={skillObject.title}
             subtitle={skillObject.subtitle}
@@ -32,7 +33,7 @@ const Skills = () => {
           </div>
         ))}
       </div> */}
-    </div>
+    </section>
   );
 };
 

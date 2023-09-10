@@ -14,49 +14,9 @@ import tsSVG from '../svgs/typescript.svg'
 
 export const skillsData  = [
     {
-        title: "Amazon Web Service",
+        title: "AWS",
         subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
         image: awsSVG
-    },
-    {
-        title: "CSS 3",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: cssSVG
-    },
-    {
-        title: "Google Firebase",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: firebaseSVG
-    },
-    {
-        title: "Flutter",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: flutterSVG
-    },
-    {
-        title: "Git",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: gitSVG
-    },
-    {
-        title: "HTML 5",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: htmlSVG
-    },
-    {
-        title: "JavaScript",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: jsSVG
-    },
-    {
-        title: "Next JS",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: nextSVG
-    },
-    {
-        title: "Node JS",
-        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: nodeSVG
     },
     {
         title: "React JS",
@@ -64,18 +24,59 @@ export const skillsData  = [
         image: reactSVG
     },
     {
+        title: "Next JS",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: nextSVG
+    },
+    {
+        title: "Flutter",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: flutterSVG
+    },
+    {
+        title: "JavaScript",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: jsSVG
+    },
+    {
+        title: "TypeScript",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: tsSVG
+    },
+    {
+        title: "HTML 5",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: htmlSVG
+    },
+    {
+        title: "CSS 3",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: cssSVG
+    },
+    {
+        title: "Firebase",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: firebaseSVG
+    },
+    {
+        title: "Node JS",
+        subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
+        image: nodeSVG
+    },
+    {
         title: "Socket.io",
         subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
         image: socketSVG
     },
     {
-        title: "Tailwind CSS",
+        title: "Git",
         subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-        image: tailwindSVG
+        image: gitSVG
     },
     // {
-    //     title: "TypeScript",
+    //     title: "Tailwind CSS",
     //     subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
-    //     image: tsSVG
+    //     image: tailwindSVG
     // },
+    
 ]
