@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import gauravChopadaImage from '../utils/images/Gaurav Chopda.jpg'
 import Link from 'next/link';
 import styles from '../styles/header.module.css'
 import classNames from 'classnames';
@@ -42,9 +41,9 @@ const Header = (props: HeaderProps) => {
             <Link href="https://www.credly.com/badges/fc599a71-6a20-4f2f-8ca1-9434aadebe9a/linked_in_profile" target='_blank'>
                 <Image className="h-14 w-14 rounded-full" src={AWSBadge} alt="I M GRooT" />
             </Link>
-            <Image
+            <img
                 className="h-12 w-12 rounded-full"
-                src={gauravChopadaImage}
+                src='https://grootportfolio.s3.us-west-2.amazonaws.com/assets/Gaurav+Chopda.jpg'
                 alt="I M GRooT"
             />
         </div>

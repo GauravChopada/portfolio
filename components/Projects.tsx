@@ -1,8 +1,5 @@
 import Image from 'next/image';
-import laptop from '../utils/images/Dummy.jpg';
-import redCarpet from '../utils/images/Red CArpet.png';
 import tlynt from '../utils/images/TLYNT.png';
-import toyr from '../utils/images/TOYR.jpg';
 
 const Projects = () => {
   return <>
@@ -51,7 +48,7 @@ const Projects = () => {
               <div className="h-[64px] w-[3px] bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
               <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
                 {/* <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" className="dark:hidden w-[272px] h-[572px]" alt="" /> */}
-                <Image src={toyr} className="hidden dark:block w-[272px] h-[572px]" alt="" />
+                <img src='https://grootportfolio.s3.us-west-2.amazonaws.com/assets/TOYR.jpg' className="hidden dark:block w-[272px] h-[572px]" alt="" />
               </div>
             </div>
           </div>
@@ -62,7 +59,7 @@ const Projects = () => {
           <div className='w-1/2'>
             <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
               <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                <Image src={redCarpet} className="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="" />
+                <Image fill src='https://grootportfolio.s3.us-west-2.amazonaws.com/assets/Red+Carpet.png' className="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="" />
                 {/* <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" className="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="" /> */}
               </div>
             </div>
