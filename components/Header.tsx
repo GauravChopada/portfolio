@@ -29,7 +29,7 @@ const Header = (props: HeaderProps) => {
             <ScrollLink to="contact" smooth={true} duration={500} className='cursor-pointer'>
                 <div className={classNames(styles.hoverEffect, styles.header, activeSection === 'contact' ? styles['header--active'] : '')}>Contact</div>
             </ScrollLink>
-            <Link href="gdrivelinjk">
+            <Link href="https://drive.google.com/file/d/1exj7t9keOreYFQg9C7Wp3AfadsIL9z0b/view?usp=sharing">
                 <div className={classNames(styles.hoverEffect, styles.header)}>Resume</div>
             </Link>
         </div>
