@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import gauravChopadaImage from '../utils/images/Gaurav Chopda.jpg'
 import locationSVG from '../utils/svgs/location.svg'
 import NamasteImage from '../utils/images/Namste.png'
 import studySVG from '../utils/svgs/study.svg'
@@ -8,7 +7,7 @@ import jobSVG from '../utils/svgs/job.svg'
 const About = () => {
     return <section id="about" className="min-h-screen w-screen px-16 flex flex-row items-center justify-center gap-40">
         <div className='w-1/3'>
-            <Image src={gauravChopadaImage} alt='Gaurav Chopda'/>
+            <img src={'https://grootportfolio.s3.us-west-2.amazonaws.com/assets/Gaurav+Chopda.jpg'} alt='Gaurav Chopda'/>
         </div>
         <div className='flex flex-col items-start justify-center gap-5 w-2/3'>
             <div className='text-5xl font-black flex flex-row items-center gap-4'>
