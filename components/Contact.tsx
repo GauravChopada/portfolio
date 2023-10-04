@@ -13,6 +13,7 @@ import { sendMail } from "@/utils/helpers";
 
 const Contact = () => {
   const [emailDetails, setEmailDetails] = useState({ name: '', email: '', subject: '', message: '' })
+  const [formError, setFormError] = useState({ name: '', email: '', subject: '', message: '' })
   const [showAlert, setShowAlert] = useState(false)
   const [isError, setIsError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -21,7 +22,23 @@ const Contact = () => {
     error: 'Something went wrong, Please try contacting on platform provided above.'
   }
 
+  const checkValidation = () => {
+    let isValid = true;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailDetails.name) { formError.name = 'Required *', isValid = false }
+    if (!emailDetails.email) { formError.email = 'Required *', isValid = false }
+    if (!emailDetails.subject) { formError.subject = 'Required *', isValid = false }
+    if (!emailDetails.message) { formError.message = 'Required *', isValid = false }
+    if (emailDetails.email && emailRegex.test(emailDetails.email) === false) { formError.email = 'Invalid email', isValid = false }
+    setFormError({ ...formError })
+    return isValid
+  }
+
   const handleSubmit = async () => {
+    if (!checkValidation()) {
+      return
+    }
+
     if (isLoading) return
     setIsLoading(true)
     const isSuccess = await sendMail(emailDetails)
@@ -103,46 +120,50 @@ const Contact = () => {
         </button>
       </div>}
 
-      <div className="w-full">
+      <form className="w-full">
         <div className="flex flex-row gap-4">
           {/* NAME */}
-          <div className="flex flex-col flex-1">
+          <div className="flex flex-col flex-1 mb-6">
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
-            <div className="relative mb-6">
+            <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
                 </svg>
               </div>
-              <input onChange={e => { setEmailDetails({ ...emailDetails, name: e.target.value }) }} type="text" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-10 p-2.5 placeholder-gray-400 text-white" placeholder="John Doe" />
+              <input required onChange={e => { setFormError({ ...formError, name: '' }), setEmailDetails({ ...emailDetails, name: e.target.value }) }} type="text" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-10 p-2.5 placeholder-gray-400 text-white" placeholder="John Doe" />
             </div>
+            <p className="ml-3 mt-2 text-sm text-red-600 dark:text-red-500">{formError.name}</p>
           </div>
 
           {/* EMAIL */}
-          <div className="flex flex-col flex-1">
+          <div className="flex flex-col flex-1 mb-6">
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
-            <div className="relative mb-6">
+            <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
                   <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
                   <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
                 </svg>
               </div>
-              <input onChange={e => { setEmailDetails({ ...emailDetails, email: e.target.value }) }} type="email" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-10 p-2.5 placeholder-gray-400 text-white" placeholder="name@gmail.com" />
+              <input required onChange={e => { setFormError({ ...formError, email: '' }), setEmailDetails({ ...emailDetails, email: e.target.value }) }} type="email" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-10 p-2.5 placeholder-gray-400 text-white" placeholder="name@gmail.com" />
             </div>
+            <p className="ml-3 mt-2 text-sm text-red-600 dark:text-red-500">{formError.email}</p>
           </div>
         </div>
 
         {/* SUBJECT */}
         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
         <div className="relative mb-6">
-          <input onChange={e => { setEmailDetails({ ...emailDetails, subject: e.target.value }) }} type="text" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-3 p-2.5 placeholder-gray-400 text-white" placeholder="Enter topic" />
+          <input required onChange={e => { setFormError({ ...formError, subject: '' }), setEmailDetails({ ...emailDetails, subject: e.target.value }) }} type="text" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-3 p-2.5 placeholder-gray-400 text-white" placeholder="Enter topic" />
+          <p className="ml-3 mt-2 text-sm text-red-600 dark:text-red-500">{formError.subject}</p>
         </div>
 
         {/* MESSAGE */}
         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
         <div className="relative mb-6">
-          <textarea onChange={e => { setEmailDetails({ ...emailDetails, message: e.target.value }) }} rows={6} id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-3 p-2.5 placeholder-gray-400 text-white" placeholder="Write message" />
+          <textarea required onChange={e => { setFormError({ ...formError, message: '' }), setEmailDetails({ ...emailDetails, message: e.target.value }) }} rows={6} id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-3 p-2.5 placeholder-gray-400 text-white" placeholder="Write message" />
+          <p className="ml-3 mt-2 text-sm text-red-600 dark:text-red-500">{formError.message}</p>
         </div>
 
         {/* SUBMIT BUTTON */}
@@ -151,7 +172,7 @@ const Contact = () => {
           SUBMIT
         </button>
 
-      </div>
+      </form>
     </section>
   );
 };
