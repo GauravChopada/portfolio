@@ -3,17 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
@@ -22,12 +14,9 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @font-face {
@@ -36,42 +25,49 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'AbrilFat';
   src: url('../utils/fonts/AbrilFatface-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'AlexBrush';
   src: url('../utils/fonts/AlexBrush-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Barber';
   src: url('../utils/fonts/Barber-Complete.otf');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Gluten';
   src: url('../utils/fonts/Gluten-VariableFont_slnt\,wght.ttf');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Kaushan';
   src: url('../utils/fonts/KaushanScript-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'OstrichSans';
   src: url('../utils/fonts/OstrichSans-Bold.otf');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Sail';
   src: url('../utils/fonts/Sail-Regular.otf');
