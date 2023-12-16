@@ -3,11 +3,11 @@ import tlynt from '../utils/images/TLYNT.png';
 
 const Projects = () => {
   return <>
-    <section id='projects' className="min-h-screen w-screen px-16 pt-40 flex flex-col items-start justify-start">
-      <div className="text-6xl font-black mb-5">Projects</div>
+    <section id='projects' className="w-full px-10 xl:px-16 pt-40 flex flex-col items-start justify-start">
+      <div className="font-black mb-3 text-4xl text-zinc-200">Projects</div>
       <div className='flex flex-row mb-32'>
-      <div className="text-xl font-light text-gray-500 mr-1">Below are some of my favourite projects I have worked on. Explore more projects on my </div>
-      <a className='text-xl font-light text-gray-500 hover:text-teal-300 hover:underline' href="https://github.com/GauravChopada/portfolio" target="_blank">Github.</a>  
+        <div className="text-xl font-light text-gray-500 mr-1">Below are some of my favourite projects I have worked on. Explore more projects on my </div>
+        <a className='text-xl font-light text-gray-500 hover:text-teal-300 hover:underline' href="https://github.com/GauravChopada/portfolio" target="_blank">Github.</a>
       </div>
       <div className='py-10'>
         {/* First Project */}

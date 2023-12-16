@@ -7,14 +7,13 @@ import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="min-w-[133vw] xl:min-w-0">
       <Intro />
       <About />
       <Skills />
       {/* <Achievements /> */}
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
-
     </div>
 
     // <AuroraBox >
