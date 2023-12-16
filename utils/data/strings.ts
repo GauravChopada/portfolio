@@ -78,27 +78,37 @@
 //     //     subtitle: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.",
 //     //     image: tailwindSVG
 //     // },
-    
+
 // ]
 
-export const skillsData = {
-    "Frontend": [
-      'HTML',
-      'CSS',
-      'React Js',
-      'Tailwind',
-      'MUI',
-      'Javascript',
-      'Typescript',
-      'Next Js 13',
+type TechStack = {
+    Frontend: string[];
+    Backend: string[];
+    Database: string[];
+    Devops: string[];
+    Languages: string[];
+    [key: string]: string[];
+  };
+  
+
+export const skillsData: TechStack = {
+    Frontend: [
+        'HTML',
+        'CSS',
+        'React Js',
+        'Tailwind',
+        'MUI',
+        'Javascript',
+        'Typescript',
+        'Next Js 13',
     ],
-    "Backend": ['Node Js', 'Express Js', 'Python', 'GoLang', 'Fiber'],
-    "Database": ['MySql', 'PostgreSQL'],
-    "Devops": [
-      'AWS',
-      'Terraform',
-      'Terragrunt',
-      'Firebase'
+    Backend: ['Node Js', 'Express Js', 'Python', 'GoLang', 'Fiber'],
+    Database: ['MySql', 'PostgreSQL'],
+    Devops: [
+        'AWS',
+        'Terraform',
+        'Terragrunt',
+        'Firebase'
     ],
-    "Languages": ['Python', 'GoLang', 'Javascript', 'Typescript'],
+    Languages: ['Python', 'GoLang', 'Javascript', 'Typescript'],
 }
