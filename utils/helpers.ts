@@ -1,4 +1,5 @@
 'use client'
+import { globals } from '@/utils/data/strings'
 
 export function convertToSubarrays<T>(data: T[]): T[][] {
     const subarrays: T[][] = [];
@@ -20,6 +21,6 @@ export async function sendMail({name, email, subject, message}: {name: string, e
     body: JSON.stringify({name, email, subject, message}),
   }
 
-  const response = await fetch('https://gaurav-chopda-portfolio-server.vercel.app/send',init )
+  const response = await fetch(globals.sendEmailAPI, init)
   return response.status === 200
 }

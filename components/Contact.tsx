@@ -10,6 +10,7 @@ import phoneSvg from '../utils/svgs/phone.svg'
 import whatsappSVG from '../utils/svgs/whatsapp.svg'
 import freelancerSVG from '../utils/svgs/freelancer.svg'
 import { sendMail } from "@/utils/helpers";
+import { globals } from "@/utils/data/strings";
 
 const Contact = () => {
   const [emailDetails, setEmailDetails] = useState({ name: '', email: '', subject: '', message: '' })
@@ -61,40 +62,40 @@ const Contact = () => {
       <div className="text-2xl md:text-3xl font-bold mb-6 text-gray-600">Get in touch on</div>
       <div className="mb-8 w-full">
         <div className="flex flex-col sm:flex-row">
-          <div className="mb-6 flex flex-row items-center gap-3 w-1/2">
+          <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10" src={githubSvg} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a href="https://github.com/GauravChopada/portfolio" target="_blank" className="hover:text-teal-300 hover:underline">github.com/GauravChopada</a>
+            <a href={globals.githubLink} target="_blank" className="hover:text-cyan-500 hover:underline">{globals.githubLinkTitle}</a>
 
           </div>
-          <div className="mb-6 flex flex-row items-center gap-3 w-1/2">
+          <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10" src={emailSvg} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a href="mailto:Gauravrchopada65@gmail.com" target="_blank" className="hover:text-teal-300 hover:underline">Gauravrchopada65@gmail.com</a>
+            <a href={`mailto:${globals.mailId}`} target="_blank" className="hover:text-cyan-500 hover:underline">{globals.mailId}</a>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row">
-          <div className="mb-6 flex flex-row items-center gap-3 w-1/2">
+          <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10" src={linkedInSvg} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a href="https://www.linkedin.com/in/gaurav-chopada/" target="_blank" className="hover:text-teal-300 hover:underline">linkedin.com/gaurav-chopada</a>
+            <a href={globals.linkedinLink} target="_blank" className="hover:text-cyan-500 hover:underline">{globals.linkedinLinkTitle}</a>
           </div>
-          <div className="mb-6 flex flex-row items-center gap-3 w-1/2">
+          <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10" src={phoneSvg} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a target="_blank" href="tel:+919328169360" className="hover:text-teal-300 hover:underline">+91 9737462950</a>
+            <a target="_blank" href={`tel:+91${globals.mobileNo}`} className="hover:text-cyan-500 hover:underline">{`+91 ${globals.mobileNo}`}</a>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row">
-          <div className="mb-6 flex flex-row items-center gap-3 w-1/2">
+          <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10 mt-2" src={freelancerSVG} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a href="https://www.freelancer.in/u/GauravChopada=" target="_blank" className="hover:text-teal-300 hover:underline">freelancer.in/GauravChopada</a>
+            <a href={globals.freelancerLink} target="_blank" className="hover:text-cyan-500 hover:underline">{globals.freelancerLinkTitle}</a>
           </div>
-          <div className="mb-6 flex flex-row items-center gap-3 w-1/2">
+          <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10" src={whatsappSVG} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a target="_blank" href="https://wa.me/919737462950" className="hover:text-teal-300 hover:underline">+91 9737462950</a>
+            <a target="_blank" href={`https://wa.me/91${globals.mobileNo}`} className="hover:text-cyan-500 hover:underline">+{`91 ${globals.mobileNo}`}</a>
           </div>
         </div>
       </div>
@@ -124,7 +125,7 @@ const Contact = () => {
         <div className="flex flex-col sm:flex-row sm:gap-4">
           {/* NAME */}
           <div className="flex flex-col flex-1 mb-6">
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
+            <label className="block mb-2 text-sm font-medium text-gray-600">Your Name</label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -138,7 +139,7 @@ const Contact = () => {
 
           {/* EMAIL */}
           <div className="flex flex-col flex-1 mb-6">
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+            <label className="block mb-2 text-sm font-medium text-gray-600">Your Email</label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -153,14 +154,14 @@ const Contact = () => {
         </div>
 
         {/* SUBJECT */}
-        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+        <label className="block mb-2 text-sm font-medium text-gray-600">Subject</label>
         <div className="relative mb-6">
           <input required onChange={e => { setFormError({ ...formError, subject: '' }), setEmailDetails({ ...emailDetails, subject: e.target.value }) }} type="text" id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-3 p-2.5 placeholder-gray-400 text-white" placeholder="Enter topic" />
           <p className="ml-3 mt-2 text-sm text-red-600 dark:text-red-500">{formError.subject}</p>
         </div>
 
         {/* MESSAGE */}
-        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+        <label className="block mb-2 text-sm font-medium text-gray-600">Message</label>
         <div className="relative mb-6">
           <textarea required onChange={e => { setFormError({ ...formError, message: '' }), setEmailDetails({ ...emailDetails, message: e.target.value }) }} rows={6} id="input-group-1" className="bg-gray-950 border border-slate-800 text-sm rounded-lg block w-full pl-3 p-2.5 placeholder-gray-400 text-white" placeholder="Write message" />
           <p className="ml-3 mt-2 text-sm text-red-600 dark:text-red-500">{formError.message}</p>
