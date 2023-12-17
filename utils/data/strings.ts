@@ -81,6 +81,29 @@
 
 // ]
 
+export const globals = {
+    resumeLink: 'https://drive.google.com/file/d/1exj7t9keOreYFQg9C7Wp3AfadsIL9z0b/view?usp=sharing',
+    photoLink: 'https://grootportfolio.s3.us-west-2.amazonaws.com/assets/Gaurav+Chopda.jpg',
+    developerName: 'Gaurav Chopda',
+    jobTitles: 'Full Stack Developer   |   AWS Solution Architect   |   Mobile App Developer',
+    githubLink: 'https://github.com/GauravChopada',
+    githubLinkTitle: 'github.com/GauravChopada',
+    linkedinLinkTitle: 'linkedin.com/gaurav-chopada',
+    linkedinLink: 'https://www.linkedin.com/in/gaurav-chopada/',
+    mailId: 'Gauravrchopada65@gmail.com',
+    mobileNo: '9737462950',
+    freelancerLink: 'https://www.freelancer.in/u/GauravChopada=',
+    freelancerLinkTitle: 'freelancer.in/GauravChopada',
+    sendEmailAPI:'https://gaurav-chopda-portfolio-server.vercel.app/send'
+}
+
+export const aboutMe = {
+    location: 'Ahmedabad, India',
+    locationLink: 'https://www.google.com/maps/place/Ahmedabad,+Gujarat/data=!4m2!3m1!1s0x395e848aba5bd449:0x4fcedd11614f6516?sa=X&ved=2ahUKEwj924L9ipaDAxXh4zgGHbvRBbAQ8gF6BAgQEAA',
+    education: 'B.tech from D.D.U.',
+    jobTitle: 'Software Engineer',
+    aboutMe: 'I am a software developer with a passion for building cutting-edge and advanced applications. I have extensive knowledge in ReactJS, Flutter, and AWS Cloud. In addition to these, I am proficient in several other programming languages and technologies, and I possess excellent problem-solving skills. I thrive in a team environment and enjoy exploring new technologies on a daily basis.'
+}
 type TechStack = {
     Frontend: string[];
     Backend: string[];
@@ -88,8 +111,8 @@ type TechStack = {
     Devops: string[];
     Languages: string[];
     [key: string]: string[];
-  };
-  
+};
+
 
 export const skillsData: TechStack = {
     Frontend: [
@@ -111,4 +134,50 @@ export const skillsData: TechStack = {
         'Firebase'
     ],
     Languages: ['Python', 'GoLang', 'Javascript', 'Typescript'],
+}
+
+export const projectsDetails = {
+    mainProjects: {
+        tlynt: {
+            title: 'TLYNT',
+            techstack: ['React JS', 'Node JS', 'AWS', 'MySQL', 'TypeScript'],
+            link: 'https://book.tlynt.com',
+            image: 'https://grootportfolio.s3.us-west-2.amazonaws.com/assets/TLYNT.png',
+            description: 'A dynamic digital platform for advertisers to identify and seamlessly book fresh REAL PEOPLE TALENT.',
+            projectType: 'DESKTOP'
+        },
+        toyr: {
+            title: 'T.O.Y.R.',
+            description: "TOYR app is used to create personalized packages on users requirements. This app is aimed towards people who wants to go on trip but do not have proper direction or guidance. This app make user’s tour experience more easy and reliable. ",
+            techstack: ['Flutter', 'Firebase', 'Google Maps API'],
+            link: 'https://github.com/GauravChopada/TOYR',
+            image: 'https://grootportfolio.s3.us-west-2.amazonaws.com/assets/TOYR.jpg',
+            projectType: 'MOBILE'
+        },
+        redCarpet: {
+            title: 'Red Carpet',
+            description: 'It is an Internal project by Tech Holding for smoothing out onboarding-offboarding process of employees.',
+            techstack: ['React JS', 'Node JS', 'AWS', 'PostgreSQL', 'JavaScript'],
+            link: 'https://redcarpet.techholding.co',
+            image: 'https://grootportfolio.s3.us-west-2.amazonaws.com/assets/Red+Carpet.png',
+            projectType: 'DESKTOP'
+        }
+    },
+    moreProject: [
+        {
+            title: 'Scribble',
+            techstack: 'Flutter, Node JS, Socket.io',
+            link: 'https://github.com/GauravChopada/Scribble'
+        },
+        {
+            title: 'Netflix Clone',
+            techstack: 'React JS, CSS',
+            link: 'https://github.com/GauravChopada/Netflix-clone'
+        },
+        {
+            title: 'Chat App',
+            techstack: 'Flutter, Firebase Realtime Database',
+            link: 'https://github.com/GauravChopada/ChitChat'
+        }
+    ]
 }

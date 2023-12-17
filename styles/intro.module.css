@@ -9,7 +9,7 @@
   font-size: clamp(1.5rem, 1rem + 6.8vw ,10rem);
   font-weight: 900;
   text-transform: uppercase;
-
+  z-index: 99;
   /* background-image: linear-gradient(90deg,blue,aqua);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -41,6 +41,7 @@
 .Intro__Subtitle {
   padding: 12px;
   color: #ffffff;
+  z-index: 99;
   background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
   background-position: 0;
   -webkit-background-clip: text;
