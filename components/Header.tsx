@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from '../styles/header.module.css'
 import classNames from 'classnames';
 import { Link as ScrollLink } from 'react-scroll';
+import { globals } from '@/utils/data/strings';
 
 interface HeaderProps {
     activeSection: string;
@@ -27,16 +28,17 @@ const Header = (props: HeaderProps) => {
             <ScrollLink to="contact" smooth={true} duration={500} className='cursor-pointer'>
                 <div className={classNames(styles.hoverEffect, styles.header, activeSection === 'contact' ? styles['header--active'] : '')}>Contact</div>
             </ScrollLink>
-            <Link href="https://drive.google.com/file/d/1exj7t9keOreYFQg9C7Wp3AfadsIL9z0b/view?usp=sharing">
+            <Link href={globals.resumeLink} target='_blank'>
                 <div className={classNames(styles.hoverEffect, styles.header)}>Resume</div>
             </Link>
         </div>
         <img
             className="h-12 w-12 min-w-12 rounded-full"
-            src='https://grootportfolio.s3.us-west-2.amazonaws.com/assets/Gaurav+Chopda.jpg'
+            src={globals.photoLink}
             alt="I M GRooT"
         />
     </div>
+
 }
 
 export default Header
