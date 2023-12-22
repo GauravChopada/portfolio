@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
             <Image className="h-10 w-10" src={githubSvg} alt="Visit GitHub" />
             <div className="border-r-2 border-slate-800 h-10" />
-            <a href={globals.githubLink} target="_blank" className="hover:text-cyan-500 hover:underline">{globals.githubLinkTitle}</a>
+          <a href={globals.githubLink} target="_blank" className="hover:text-cyan-500 hover:underline">{globals.githubLinkTitle}</a>
 
           </div>
           <div className="mb-6 flex flex-row items-center gap-3 sm:w-1/2">
@@ -125,7 +125,7 @@ const Contact = () => {
         <div className="flex flex-col sm:flex-row sm:gap-4">
           {/* NAME */}
           <div className="flex flex-col flex-1 mb-6">
-            <label className="block mb-2 text-sm font-medium text-gray-600">Your Name</label>
+          <label className="block mb-2 text-sm font-medium text-gray-600">Your Name</label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
