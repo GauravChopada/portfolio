@@ -2,10 +2,10 @@ import Image from 'next/image';
 import tlynt from '../utils/images/TLYNT.png';
 import { projectsDetails } from '@/utils/data/strings';
 
-const Projects = () => {
+const Experience = () => {
   return <>
-    <section id='projects' className="w-full px-10 xl:px-16 pt-40 flex flex-col items-start justify-start">
-      <div className="font-black mb-3 text-4xl text-zinc-200">Projects</div>
+    <section id='experience' className="w-full mt-10 p-5 border-8 border-black flex flex-col items-start justify-start">
+      <div className="font-black mb-3 text-4xl text-zinc-200">Experience</div>
       <div className='flex flex-row mb-12 sm:mb-32'>
         <div className="text-md sm:text-xl font-light text-gray-500 mr-1">Below are some of my favourite projects I have worked on. Explore more projects on my <a className='hover:text-teal-300 hover:underline' href="https://github.com/GauravChopada/portfolio" target="_blank">Github.</a> </div>
       </div>
@@ -95,7 +95,7 @@ const Projects = () => {
       </div>
 
       {/* More Projects Section */}
-      <div className="font-black mb-3 text-3xl pt-10 sm:pt-0 text-gray-400">More Projects</div>
+      <div className="font-black mb-3 text-3xl pt-20 sm:pt-0 text-gray-400">More Projects</div>
       <div className='flex flex-row gap-3 w-full py-10 flex-wrap overflow-y-visible'>
         {
           projectsDetails.moreProject.map((project) => (
@@ -113,4 +113,4 @@ const Projects = () => {
   </>;
 }
 
-export default Projects
+export default Experience

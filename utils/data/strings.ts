@@ -94,7 +94,7 @@ export const globals = {
     mobileNo: '9737462950',
     freelancerLink: 'https://www.freelancer.in/u/GauravChopada=',
     freelancerLinkTitle: 'freelancer.in/GauravChopada',
-    sendEmailAPI:'https://gaurav-chopda-portfolio-server.vercel.app/send'
+    sendEmailAPI: 'https://gaurav-chopda-portfolio-server.vercel.app/send'
 }
 
 export const aboutMe = {
@@ -135,6 +135,28 @@ export const skillsData: TechStack = {
     ],
     Languages: ['Python', 'GoLang', 'Javascript', 'Typescript'],
 }
+
+// export const allSkills = [
+//     'HTML',
+//     'CSS',
+//     'React Js',
+//     'Tailwind',
+//     'MUI',
+//     'Javascript',
+//     'Typescript',
+//     'Next Js 13',
+//     'Node Js', 'Express Js', 'Python', 'GoLang', 'Fiber', 'MySql', 'PostgreSQL', 'AWS',
+//     'Terraform',
+//     'Terragrunt',
+//     'Firebase', 'Python', 'GoLang'
+// ]
+
+export const allSkills = [
+    'Frontend Developer',
+    'Backend Developer',
+    'AWS Solution Architect',
+    'Mobile App Developer'
+]
 
 export const projectsDetails = {
     mainProjects: {

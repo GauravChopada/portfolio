@@ -1,25 +1,22 @@
 import Intro from '@/components/Intro'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
-import Contact from '@/components/Contact'
-import Projects from '@/components/Projects'
+// import Contact from '@/components/Contact'
+import Contact from '@/components/Contact2'
+import Conveyer from '@/components/Conveyer'
+// import Experience from '@/components/Experience'
 // import Achievements from '@/components/Achievements'
 
 export default function Home() {
   return (
-    <div className="min-w-[133vw] xl:min-w-0">
+    <div className="min-w-[100vw]">
       <Intro />
       <About />
       <Skills />
       {/* <Achievements /> */}
-      <Projects />
+      {/* <Experience /> */}
+      <Conveyer />
       <Contact />
     </div>
-
-    // <AuroraBox >
-    // <h1>
-    // GROOT
-    // </h1>
-    // </AuroraBox>
   )
 }
