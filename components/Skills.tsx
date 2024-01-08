@@ -12,10 +12,11 @@ const Skills = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5" >
         {Object.keys(skillsData).map((key, index) => (
-          <div key={index} data-aos="fade-up" data-aos-delay="300">
+          <div key={index}>
             <TechCard
               title={key}
               tech={skillsData[key]}
+              index={index}
             />
           </div>
         ))

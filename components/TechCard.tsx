@@ -7,11 +7,12 @@ import classNames from 'classnames';
 interface TechCardProps {
   title: string;
   tech: string[];
+  index: number;
 }
 
-const TechCard: FC<TechCardProps> = ({ title, tech }) => {
+const TechCard: FC<TechCardProps> = ({ title, tech, index }) => {
   return (
-    <div className="flex-1 flex flex-col gap-4 bg-cardPrimary py-4 rounded-md shadow-lg">
+    <div className="flex-1 flex flex-col gap-4 bg-cardPrimary py-4 rounded-md shadow-lg" data-aos="fade-up" data-aos-delay={`${index * 100}`}>
       <div className="text-primary font-medium text-lg tracking-wider">
         {title}
       </div>
