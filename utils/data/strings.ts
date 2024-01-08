@@ -152,10 +152,10 @@ export const skillsData: TechStack = {
 // ]
 
 export const allSkills = [
-    'Frontend Developer',
-    'Backend Developer',
-    'AWS Solution Architect',
-    'Mobile App Developer'
+    'Software Engineer',
+    'AWS Certified Solution Architect',
+    'Mobile App Developer',
+    'Terraform Certified'
 ]
 
 export const projectsDetails = {
